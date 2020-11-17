@@ -16,6 +16,6 @@ steps:
 
 - script: |
     doxygen
-    xcopy /E /Y html c:\work\azure_doc
+    xcopy /E /Y html c:\work\azure_doc\
   displayName: 'Run a multi-line script'
      
