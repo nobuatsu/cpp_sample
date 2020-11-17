@@ -16,14 +16,6 @@ steps:
 
 - script: |
     doxygen
-    # cp ./html /work/doc_html
+    xcopy /E /Y html c:\work\azure_doc
   displayName: 'Run a multi-line script'
-
-- task: PowerShell@2
-  inputs:
-    targetType: 'inline'
-    script: |
-      # Write your PowerShell commands here.
-      
-      Write-Host "Hello World"
-      
+     
